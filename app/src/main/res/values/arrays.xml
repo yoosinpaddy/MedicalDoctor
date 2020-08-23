@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="menu">
+        <item>EDIT PROFILE</item>
+        <item>ADMIN</item>
+        <item>LogOut</item>
+        <item>VIEW SERVICES</item>
+        <item>REGISTER</item>
+        <item>FACILITY LOCATION</item>
+    </array>
+    <array name="service">
+        <item>Muranga</item>
+        <item>Kiambu</item>
+        <item>Nakuru</item>
+        <item>Nairobi</item>
+        <item>Kakamega</item>
+        <item>Nyeri</item>
+        <item>Kirinyaga</item>
+        <item>Uasingishu</item>
+        <item>Kericho</item>
+        <item>Mombasa</item>
+        <item>Taita-Taveta</item>
+        <item>Lamu</item>
+        <item>Kisumu</item>
+        <item>Baringo</item>
+        <item>Samburu</item>
+        <item>Nyandarua</item>
+    </array>
+</resources>

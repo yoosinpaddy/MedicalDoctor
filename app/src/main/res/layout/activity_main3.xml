@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="100dp" android:text="Edit Profile"/>
+        <EditText android:textSize="26sp" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="Name" android:inputType="text"/>
+        <EditText android:textSize="26sp" android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:hint="Email" android:inputType="textEmailAddress"/>
+        <EditText android:textSize="26sp" android:id="@+id/phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="140dp" android:hint="Phone" android:inputType="phone"/>
+        <EditText android:textSize="26sp" android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:hint="Address" android:inputType="text"/>
+        <EditText android:textSize="26sp" android:id="@+id/specialization" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="260dp" android:hint="Specialization" android:inputType="text"/>
+        <EditText android:textSize="26sp" android:id="@+id/latitude" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="320dp" android:hint="Latitude" android:inputType="text"/>
+        <EditText android:textSize="26sp" android:id="@+id/longitude" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="380dp" android:hint="Longitude" android:inputType="text"/>
+        <Button android:id="@+id/edit" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="460dp" android:text="Edit profile"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

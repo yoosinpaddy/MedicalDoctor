@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#898989"
+        android:inputType="text"
+        android:queryHint="Search for facilities" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/hospital"
+        android:src="@drawable/john1" />
+
+    <ImageButton
+        android:id="@+id/doctor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:clickable="true"
+        android:contentDescription="@string/doctor"
+        android:focusable="true"
+        android:tag="Doctor"
+        app:srcCompat="@drawable/ic_person" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:background="#ffffff"
+        android:text="@string/doctor_location" />
+
+    <ImageButton
+        android:id="@+id/maps"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="200dp"
+        android:clickable="true"
+        android:contentDescription="@string/doctor"
+        android:focusable="true"
+        android:tag="Maps"
+        app:srcCompat="@drawable/ic_map" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="290dp"
+        android:background="#ffffff"
+        android:text="Facilities map" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="200dp"
+        android:clickable="true"
+        android:contentDescription="@string/doctor"
+        android:focusable="true"
+        android:tag="Profile"
+        app:srcCompat="@drawable/ic_profile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="290dp"
+        android:background="#ffffff"
+        android:text="Profile" />
+
+    <ImageButton
+        android:id="@+id/service"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="320dp"
+        android:clickable="true"
+        android:contentDescription="@string/doctor"
+        android:focusable="true"
+        android:tag="Service center"
+        app:srcCompat="@drawable/ic_pin_drop_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:background="#ffffff"
+        android:text="Service center" />
+
+    <ImageButton
+        android:id="@+id/reservation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="320dp"
+        android:clickable="true"
+        android:contentDescription="@string/doctor"
+        android:focusable="true"
+        android:tag="Reservation"
+        app:srcCompat="@drawable/ic_reservation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="420dp"
+        android:background="#ffffff"
+        android:text="Reservation" />
+
+    <ImageButton
+        android:id="@+id/feedback"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="320dp"
+        android:clickable="true"
+        android:contentDescription="@string/doctor"
+        android:focusable="true"
+        android:tag="Feedback"
+        app:srcCompat="@drawable/ic_feedback" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="420dp"
+        android:background="#ffffff"
+        android:text="Feedback" />
+
+    <include
+        layout="@layout/content_dashboard"
+        android:background="#0288d1"
+        app:layout_anchor="@+id/textView5"
+        app:layout_anchorGravity="center_vertical" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

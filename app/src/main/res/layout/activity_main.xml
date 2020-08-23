@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#0288d1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="100dp" android:layout_marginRight="169dp" android:src="@drawable/logo" android:contentDescription="@string/signup"/>
+    <EditText android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="150dp" android:layout_marginBottom="534dp" android:hint="@string/enter_email" android:inputType="textEmailAddress"/>
+    <EditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="240dp" android:layout_marginBottom="445dp" android:hint="Enter Email" android:inputType="textPassword"/>
+    <Button android:id="@+id/login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="340dp" android:text="@string/login" android:cursorVisible="true"/>
+    <Button android:textSize="14sp" android:id="@+id/sign" android:background="#788956" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="420dp" android:text="@string/not_signed_click"/>
+</RelativeLayout>

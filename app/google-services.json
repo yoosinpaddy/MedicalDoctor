@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "32775588470",
+    "firebase_url": "https://peter-ba59f.firebaseio.com",
+    "project_id": "peter-ba59f",
+    "storage_bucket": "peter-ba59f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32775588470:android:58d3b0a9d8ca774534ad57",
+        "android_client_info": {
+          "package_name": "com.example.e_medics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32775588470-f5ppj9dm830oiabr003gr2pg8nk3eag8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_medics",
+            "certificate_hash": "7a17ce72a44a340f4709c55a914046e5a9a44ff5"
+          }
+        },
+        {
+          "client_id": "32775588470-te4r5shfkuj4oh3eo5p7vv0t35inl5ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMLgUbIXImmn9dk6fXfjydhrymz7FlHJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32775588470-te4r5shfkuj4oh3eo5p7vv0t35inl5ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

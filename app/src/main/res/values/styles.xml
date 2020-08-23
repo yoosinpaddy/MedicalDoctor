@@ -1,0 +1,49 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay">
+    </style>
+    <style name="AppTheme.PopupOverlay">
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay">
+    </style>
+    <style name="ShapeAppearanceOverlay.BottomLeftDifferentCornerSize">
+        <item name="cornerSizeBottomLeft">20px</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.TopRightDifferentCornerSize">
+        <item name="cornerSizeTopRight">20px</item>
+    </style>
+
+    <style name="TestStyleWithLineHeight">
+        <item name="lineHeight">@dimen/material_text_view_test_line_height</item>
+    </style>
+    <style name="TestStyleWithLineHeightAppearance">
+        <item name="android:textAppearance">@style/TestStyleWithLineHeight</item>
+    </style>
+    <style name="TestStyleWithThemeLineHeightAttribute">
+        <item name="lineHeight">?attr/themeLineHeight</item>
+    </style>
+    <style name="TestStyleWithoutLineHeight">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="TestThemeWithLineHeight">
+        <item name="themeLineHeight">@dimen/material_text_view_test_line_height</item>
+    </style>
+    <style name="TestThemeWithLineHeightDisabled">
+        <item name="textAppearanceLineHeightEnabled">false</item>
+    </style>
+
+
+</resources>

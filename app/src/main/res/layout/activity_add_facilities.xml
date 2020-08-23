@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#03a9f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textStyle="normal|bold|italic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="100dp" android:hint="ADD FACILITIES"/>
+    <EditText android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="Enter Name" android:inputType="text"/>
+    <EditText android:id="@+id/location" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="Enter Name" android:inputType="text"/>
+    <EditText android:id="@+id/town" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="Center" android:inputType="text"/>
+    <EditText android:id="@+id/lat" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="Enter Latitude" android:inputType="text"/>
+    <EditText android:id="@+id/log" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="Enter Longitude" android:inputType="text"/>
+    <Button android:id="@+id/addfacilities" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="ADD FACILITIES"/>
+</LinearLayout>

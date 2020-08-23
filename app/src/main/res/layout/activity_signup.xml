@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="24sp" android:textColor="#ff0000" android:background="#ff6700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110dp" android:text="@string/signup"/>
+    <EditText android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:hint="@string/enter_email" android:inputType="textEmailAddress"/>
+    <EditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:hint="@string/wangushi" android:inputType="textPassword"/>
+    <Button android:id="@+id/add" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="220dp" android:text="@string/sign"/>
+</RelativeLayout>
