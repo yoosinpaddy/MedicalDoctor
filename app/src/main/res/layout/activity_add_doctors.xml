@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="ADD FACILITIES"
+        android:text="ADD Doctor"
+        android:textAllCaps="true"
         android:textColor="@color/black"
         android:textStyle="normal|bold" />
 
@@ -27,31 +28,47 @@
 
     <com.google.android.material.textfield.TextInputEditText
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Email"
+        android:inputType="text" />
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:hint="Enter Name"
+        android:hint="Address"
         android:inputType="text" />
 
     <com.google.android.material.textfield.TextInputEditText
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:id="@+id/town"
+        android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:hint="Center"
+        android:hint="Phone"
         android:inputType="text" />
 
     <com.google.android.material.textfield.TextInputEditText
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:id="@+id/lat"
+        android:id="@+id/specialization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Specialization"
+        android:inputType="text" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/latitude"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="Enter Latitude"
-        android:inputType="text" />
-
+        android:inputType="numberDecimal" />
     <com.google.android.material.textfield.TextInputEditText
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/log"
@@ -59,10 +76,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="Enter Longitude"
-        android:inputType="text" />
+        android:inputType="numberDecimal" />
     <com.google.android.material.button.MaterialButton
-        android:background="@color/colorAccent"
+        android:background="@drawable/base"
         android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="4dp"
         android:id="@+id/addfacilities"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

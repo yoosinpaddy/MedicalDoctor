@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     EditText email;
     EditText password;
 
-    /* access modifiers changed from: protected */
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView((int) R.layout.activity_main);
@@ -44,5 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
+    }
+    public void patientin(View v){
+        startActivity(new Intent(MainActivity.this, SignupPatient.class));
     }
 }

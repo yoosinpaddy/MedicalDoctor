@@ -1,10 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#0288d1" android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="100dp" android:layout_marginRight="169dp" android:src="@drawable/logo" android:contentDescription="@string/signup"/>
-    <com.google.android.material.textfield.TextInputEditText
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="150dp" android:layout_marginBottom="534dp" android:hint="@string/enter_email" android:inputType="textEmailAddress"/>
-    <com.google.android.material.textfield.TextInputEditText
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="240dp" android:layout_marginBottom="445dp" android:hint="Enter Email" android:inputType="textPassword"/>
-    <com.google.android.material.button.MaterialButton  android:id="@+id/login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="340dp" android:text="@string/login" android:cursorVisible="true"/>
-    <com.google.android.material.button.MaterialButton  android:textSize="14sp" android:id="@+id/sign" android:background="#788956" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="420dp" android:text="@string/not_signed_click"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/topImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/signup"
+        android:src="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emaill"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topImage"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:outlineSpotShadowColor="@color/colorAccent"
+            android:textColor="@color/black"
+            android:textColorHint="#DAB9FF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordl"
+        android:layout_below="@+id/emaill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#DAB9FF"
+            android:textColor="@color/black"
+            android:layout_below="@id/email"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordl"
+        android:layout_marginTop="20dp"
+        android:cursorVisible="true"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/colorAccent"
+        android:text="@string/login" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="20dp"
+        android:cursorVisible="true"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:onClick="patientin"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/colorAccent"
+        android:text="Patient inquiry" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/base"
+        android:gravity="center"
+        android:text="@string/not_signed_click"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
 </RelativeLayout>

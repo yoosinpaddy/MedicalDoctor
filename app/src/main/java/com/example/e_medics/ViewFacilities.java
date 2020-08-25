@@ -18,11 +18,12 @@ public class ViewFacilities extends AppCompatActivity {
     List<String> show = new ArrayList();
     ListView viewfacilities;
 
-    /* access modifiers changed from: protected */
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView((int) R.layout.activity_view_facilities);
         this.database = FirebaseDatabase.getInstance();
+        viewfacilities=findViewById(R.id.viewfacilities);
         this.ref = this.database.getReference();
         this.ref.child("facilities").addValueEventListener(new ValueEventListener() {
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -34,6 +35,6 @@ public class ViewFacilities extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
             }
         });
-        this.viewfacilities.setAdapter(new ArrayAdapter<>(getApplicationContext(), 17367043, this.show));
+        this.viewfacilities.setAdapter(new ArrayAdapter<>(getApplicationContext(), R.layout.text_view_with_line_height_from_layout, this.show));
     }
 }

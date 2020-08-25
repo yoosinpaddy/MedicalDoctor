@@ -28,12 +28,12 @@ public class Login extends AppCompatActivity {
                     return;
                 }else {
                     // If sign in fails, display a message to the user.
-                    Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                    Log.w(TAG, "signInWithEmail:failure", task.getException());
                     Toast.makeText(Login.this, "Authentication failed.",
                             Toast.LENGTH_SHORT).show();
                 }
                 Toast.makeText(Login.this.getApplicationContext(), "Error Login Signup", 1).show();
-                Login.this.startActivity(new Intent(Login.this.getApplicationContext(), Signup.class));
+                Login.this.startActivity(new Intent(Login.this.getApplicationContext(), MainActivity.class));
             }
         });
     }

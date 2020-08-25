@@ -13,7 +13,7 @@ public class Admin extends AppCompatActivity {
     EditText password;
     EditText username;
 
-    /* access modifiers changed from: protected */
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView((int) R.layout.activity_admin);
@@ -29,7 +29,7 @@ public class Admin extends AppCompatActivity {
                     Admin.this.startActivity(new Intent(Admin.this.getApplicationContext(), Admin.class));
                     return;
                 }
-                Admin.this.startActivity(new Intent(Admin.this.getApplicationContext(), Main2Activity.class));
+                Admin.this.startActivity(new Intent(Admin.this.getApplicationContext(), AdminDashBoard.class));
             }
         });
     }

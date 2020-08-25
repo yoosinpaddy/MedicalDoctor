@@ -15,8 +15,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main2Activity extends AppCompatActivity {
-    Button add;
+public class AdminDashBoard extends AppCompatActivity {
+    Button add,addDoctors;
     FirebaseDatabase database;
     Button doctor;
     /* access modifiers changed from: private */
@@ -26,45 +26,52 @@ public class Main2Activity extends AppCompatActivity {
     Button viewfacilities;
     Button viewfeedback;
 
-    /* access modifiers changed from: protected */
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) R.layout.activity_main2);
+        setContentView((int) R.layout.admin_dash_board);
         this.listView = (ListView) findViewById(R.id.list);
         this.database = FirebaseDatabase.getInstance();
         this.ref = this.database.getReference();
         this.add = (Button) findViewById(R.id.addfacilities);
+        this.addDoctors = (Button) findViewById(R.id.adddoctors);
         this.viewfacilities = (Button) findViewById(R.id.viewfacilities);
         this.viewfeedback = (Button) findViewById(R.id.viewfeedback);
         this.doctor = (Button) findViewById(R.id.viewdoctors);
         this.doctor.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Main2Activity.this.ref.child("doctor").addValueEventListener(new ValueEventListener() {
+                AdminDashBoard.this.ref.child("doctor").addValueEventListener(new ValueEventListener() {
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for (DataSnapshot child : dataSnapshot.getChildren()) {
-                            Main2Activity.this.list.add(((Doctor) child.getValue(Doctor.class)).Name);
+                            AdminDashBoard.this.list.add(((Doctor) child.getValue(Doctor.class)).Name);
                         }
                     }
 
                     public void onCancelled(DatabaseError databaseError) {
                     }
                 });
-                Main2Activity.this.listView.setAdapter(new ArrayAdapter<>(Main2Activity.this.getApplicationContext(), 17367043, Main2Activity.this.list));
+                AdminDashBoard.this.listView.setAdapter(new ArrayAdapter<>(AdminDashBoard.this.getApplicationContext(), R.layout.text_view_with_line_height_from_layout, AdminDashBoard.this.list));
+//                Main2Activity.this.listView.setAdapter(new ArrayAdapter<>(Main2Activity.this.getApplicationContext(), 17367043, Main2Activity.this.list));
             }
         });
         this.viewfacilities.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Main2Activity.this.startActivity(new Intent(Main2Activity.this.getApplicationContext(), ViewFacilities.class));
+                AdminDashBoard.this.startActivity(new Intent(AdminDashBoard.this.getApplicationContext(), ViewFacilities.class));
             }
         });
         this.viewfeedback.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Main2Activity.this.startActivity(new Intent(Main2Activity.this.getApplicationContext(), ViewFeedback.class));
+                AdminDashBoard.this.startActivity(new Intent(AdminDashBoard.this.getApplicationContext(), ViewFeedback.class));
             }
         });
         this.add.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Main2Activity.this.startActivity(new Intent(Main2Activity.this.getApplicationContext(), AddFacilities.class));
+                AdminDashBoard.this.startActivity(new Intent(AdminDashBoard.this.getApplicationContext(), AddPatient.class));
+            }
+        });
+        this.addDoctors.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                AdminDashBoard.this.startActivity(new Intent(AdminDashBoard.this.getApplicationContext(), AddDoctors.class));
             }
         });
     }

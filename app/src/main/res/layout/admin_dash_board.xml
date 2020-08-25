@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/topmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addfacilities"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:text="Add Patient"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewfacilities"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="FACILITIES"
+            android:layout_margin="3dp"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewfeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Feedback"
+            android:layout_margin="3dp"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewdoctors"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="View Doctors"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/secTop"
+        android:layout_below="@id/topmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/adddoctors"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:text="Add Doctors"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"/>
+       <!-- <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewfacilities"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="FACILITIES"
+            android:layout_margin="3dp"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewfeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Feedback"
+            android:layout_margin="3dp"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewdoctors"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="View Doctors"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textSize="12sp" />-->
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIST OF AVAILABLE DOCTOR"
+        android:layout_below="@id/secTop"
+        android:textStyle="normal|bold|italic" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@id/tittle"
+        android:divider="#000000"
+        android:dividerHeight="1dp" />
+</RelativeLayout>

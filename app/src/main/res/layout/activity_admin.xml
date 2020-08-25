@@ -37,7 +37,9 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/log"
-        android:background="@color/colorAccent"
+        android:background="@drawable/base"
+        android:gravity="center"
+        android:textSize="22sp"
         android:textColor="@color/primaryTextColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
